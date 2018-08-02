@@ -6,15 +6,14 @@ dao接口就是常说的Mapper接口，Mapper的全名对应namespae名，方法
 
 
 ##6、Mybatis执行批量插入，能返回数据库主键列表吗？
-注：我出的。
-
 答：能，JDBC都能，Mybatis当然也能。
 
-7、Mybatis动态sql是做什么的？都有哪些动态sql？能简述一下动态sql的执行原理不？
-注：我出的。
-
-##答：Mybatis动态sql可以让我们在Xml映射文件内，以标签的形式编写动态sql，完成逻辑判断和动态拼接sql的功能，
+##7、Mybatis动态sql是做什么的？都有哪些动态sql？能简述一下动态sql的执行原理不？
+答：Mybatis动态sql可以让我们在Xml映射文件内，以标签的形式编写动态sql，完成逻辑判断和动态拼接sql的功能，
 Mybatis提供了9种动态sql标签trim|where|set|foreach|if|choose|when|otherwise|bind。
 
 其执行原理为，使用OGNL从传入sql参数对象中计算表达式的值，根据表达式的值动态拼接sql，以此来完成动态sql的功能。
+
+##12、Mybatis中如何执行批处理？
+答：使用BatchExecutor完成批处理。
 
